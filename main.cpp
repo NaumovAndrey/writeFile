@@ -21,11 +21,11 @@ int main()
 
     while (true)
     {
-        std::cout << "0: lessonïðèâåò" << std::endl;
-        std::cout << "1: Implement an entry in the accounting statement." << std::endl; //Ðåàëèçîâàòü çàïèñü â âåäîìîñòü ó÷¸òà.
-        std::cout << "2: Implement the drawing of random pictures." << std::endl; //Ðåàëèçîâàòü ðèñîâàíèå ñëó÷àéíûõ êàðòèí.
-        std::cout << "3: Implement a simulation of the game \"Fishing\"." << std::endl; //Ðåàëèçîâàòü ñèìóëÿöèþ èãðû «Ðûáàëêà».
-        std::cout << "4: Implement a simulation of ATM operation." << std::endl; //Ðåàëèçîâàòü ñèìóëÿöèþ ðàáîòû áàíêîìàòà.
+        std::cout << "0: lesson" << std::endl;
+        std::cout << "1: Implement an entry in the accounting statement." << std::endl; //Ð ÐµÐ°Ð»Ð¸Ð·Ð¾Ð²Ð°Ñ‚ÑŒ Ð·Ð°Ð¿Ð¸ÑÑŒ Ð² Ð²ÐµÐ´Ð¾Ð¼Ð¾ÑÑ‚ÑŒ ÑƒÑ‡Ñ‘Ñ‚Ð°.
+        std::cout << "2: Implement the drawing of random pictures." << std::endl; //Ð ÐµÐ°Ð»Ð¸Ð·Ð¾Ð²Ð°Ñ‚ÑŒ Ñ€Ð¸ÑÐ¾Ð²Ð°Ð½Ð¸Ðµ ÑÐ»ÑƒÑ‡Ð°Ð¹Ð½Ñ‹Ñ… ÐºÐ°Ñ€Ñ‚Ð¸Ð½.
+        std::cout << "3: Implement a simulation of the game \"Fishing\"." << std::endl; //Ð ÐµÐ°Ð»Ð¸Ð·Ð¾Ð²Ð°Ñ‚ÑŒ ÑÐ¸Ð¼ÑƒÐ»ÑÑ†Ð¸ÑŽ Ð¸Ð³Ñ€Ñ‹ Â«Ð Ñ‹Ð±Ð°Ð»ÐºÐ°Â».
+        std::cout << "4: Implement a simulation of ATM operation." << std::endl; //Ð ÐµÐ°Ð»Ð¸Ð·Ð¾Ð²Ð°Ñ‚ÑŒ ÑÐ¸Ð¼ÑƒÐ»ÑÑ†Ð¸ÑŽ Ñ€Ð°Ð±Ð¾Ñ‚Ñ‹ Ð±Ð°Ð½ÐºÐ¾Ð¼Ð°Ñ‚Ð°.
         std::cout << "Enter a number from 0 to 4 or something else to exit: ";
 
         int task;
