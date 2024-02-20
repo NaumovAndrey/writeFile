@@ -9,7 +9,6 @@ void task1();
 void task2();
 void task3();
 void task4();
-void task5();
 
 int main()
 {
@@ -17,7 +16,7 @@ int main()
     SetConsoleOutputCP(1251);
     setlocale(LC_ALL, "RUS");
 
-    std::cout << "Домашняя работа ко второй лекции. Запись в файлы" << std::endl;
+    std::cout << "Homework for the second lecture. Writing to files" << std::endl;
 
     while (true)
     {
@@ -26,8 +25,7 @@ int main()
         std::cout << "2: " << std::endl;
         std::cout << "3: " << std::endl;
         std::cout << "4: " << std::endl;
-        std::cout << "5: " << std::endl;
-        std::cout << "Введите число от 0 до 4 или что-то другое для выхода: ";
+        std::cout << "Enter a number from 0 to 4 or something else to exit: ";
 
         int task;
         std::cin >> task;
@@ -44,35 +42,35 @@ int main()
         else if (task == 1)
         {
             system("cls");
-            std::cout << "Задача 1 " << std::endl;
+            std::cout << "Task 1 " << std::endl;
             task1();
             _getch();
             system("cls");;
         } else if (task == 2)
         {
             system("cls");
-            std::cout << "Задача 2 " << std::endl;
+            std::cout << "Task 2 " << std::endl;
             task2();
             _getch();
             system("cls");;
         } else if (task == 3)
         {
             system("cls");
-            std::cout << "Задача 3 " << std::endl;
+            std::cout << "Task 3 " << std::endl;
             task3();
             _getch();
             system("cls");;
         } else if (task == 4)
         {
             system("cls");
-            std::cout << "Задача 4 " << std::endl;
+            std::cout << "Task 4 " << std::endl;
             task4();
             _getch();
             system("cls");;
         }  else
         {
             system("cls");
-            std::cout << "некорректный ввод. Выход из программы";
+            std::cout << "Incorrect input. Exiting the program";
             break;
         }
     }
