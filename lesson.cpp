@@ -9,21 +9,21 @@ void sign()
 {
     setlocale(LC_ALL, "RUS");
     std::ofstream file;
-    file.open("file.txt", std::ios::app); // РѕС‚РєСЂС‹С‚СЊ Рё РґРѕРїРёСЃР°С‚СЊ
-    file.setf(std::ios::showpos); //РІС‹РІРѕРґ Р±СѓРґРµС‚ СЃРѕ Р·РЅР°РєРѕРј + - +36.6
+    file.open("file.txt", std::ios::app); // открыть и дописать
+    file.setf(std::ios::showpos); //вывод будет со знаком + - +36.6
     double doubleNumber = 36.6;
-    file << std::endl << doubleNumber; //Р·Р°РїРёСЃСЊ РІ С„Р°Р№Р»: +36.6
+    file << std::endl << doubleNumber; //запись в файл: +36.6
     file.close();
 }
 
 void writingBool()
 {
     std::ofstream file;
-    file.open("file.txt", std::ios::app); // РѕС‚РєСЂС‹С‚СЊ Рё РґРѕРїРёСЃР°С‚СЊ
-    file.setf(std::ios::showpos); //РІС‹РІРѕРґ Р±СѓРґРµС‚ СЃРѕ Р·РЅР°РєРѕРј + - +36.6
-    file.setf(std::ios::boolalpha); //РІС‹РІРѕРґ Р±СѓРґРµС‚ "true / falese" РІРјРµСЃС‚Рѕ "1" РёР»Рё "0"
-    file.setf(std::ios::showpoint); // РїРѕРєР°Р·Р°С‚СЊ С‚РѕС‡РєСѓ РїСЂРё РІС‹РІРѕРґРµ --> 20 РІС‹РІРµРґРµС‚ +20.0000
-    file.precision(3); // --> +20.0 С‚РѕС‡РЅРѕСЃС‚СЊ 3 Р·РЅР°РєР°
+    file.open("file.txt", std::ios::app); // открыть и дописать
+    file.setf(std::ios::showpos); //вывод будет со знаком + - +36.6
+    file.setf(std::ios::boolalpha); //вывод будет "true / falese" вместо "1" или "0"
+    file.setf(std::ios::showpoint); // показать точку при выводе --> 20 выведет +20.0000
+    file.precision(3); // --> +20.0 точность 3 знака
     bool light = true;
     double doubleNumber = 20;
     file << std::endl << doubleNumber;
@@ -33,12 +33,12 @@ void writingBool()
 void array()
 {
     std::ofstream file;
-    file.open("file.txt", std::ios::app); // РѕС‚РєСЂС‹С‚СЊ Рё РґРѕРїРёСЃР°С‚СЊ
-    file.setf(std::ios::showpos); //РІС‹РІРѕРґ Р±СѓРґРµС‚ СЃРѕ Р·РЅР°РєРѕРј + - +36.6
-    file.setf(std::ios::boolalpha); //РІС‹РІРѕРґ Р±СѓРґРµС‚ "true / falese" РІРјРµСЃС‚Рѕ "1" РёР»Рё "0"
-    file.setf(std::ios::showpoint); // РїРѕРєР°Р·Р°С‚СЊ С‚РѕС‡РєСѓ РїСЂРё РІС‹РІРѕРґРµ --> 20 РІС‹РІРµРґРµС‚ +20.0000
-    file.setf(std::ios::fixed); // РѕРЅ РґРµР»Р°РµС‚ С‡РёСЃР»Р° СЃ РїР»Р°РІР°СЋС‰РµР№ С‚РѕС‡РєРѕР№ С„РёРєСЃРёСЂРѕРІР°РЅРЅРѕ, РїСЂРё СЌС‚РѕРј РёР·РјРµРЅСЏРµС‚ "file.precision(3)" С‚РµСЂРїРµСЂСЊ РЅР°РґРѕ СѓРєР°Р·Р°С‚СЊ РґСЂРѕР±СЊ, Р° РЅРµ РѕР±С‰РµРµ РєРѕР»РёС‡РµСЃС‚РІРѕ С†РёС„СЂ
-    file.precision(1); // --> +20.0 С‚РѕС‡РЅРѕСЃС‚СЊ 3 Р·РЅР°РєР° -->1
+    file.open("file.txt", std::ios::app); // открыть и дописать
+    file.setf(std::ios::showpos); //вывод будет со знаком + - +36.6
+    file.setf(std::ios::boolalpha); //вывод будет "true / falese" вместо "1" или "0"
+    file.setf(std::ios::showpoint); // показать точку при выводе --> 20 выведет +20.0000
+    file.setf(std::ios::fixed); // он делает числа с плавающей точкой фиксированно, при этом изменяет "file.precision(3)" терперь надо указать дробь, а не общее количество цифр
+    file.precision(1); // --> +20.0 точность 3 знака -->1
 
     double temps[] = { 10.5, 8.3, 0, -1,1, -2 };
     const char* conditions[] = { "sunny", "cloudy", "windy", "snowy", "stormy" };
@@ -54,7 +54,7 @@ void array()
     file.close();
 }
 
-void writeFile() //Р·Р°РїРёСЃСЊ Р±РёРЅР°СЂРЅРѕРіРѕ С„Р°Р№Р»Р° int
+void writeFile() //запись бинарного файла int
 {
     int number;
     std::cin >> number;
@@ -64,7 +64,7 @@ void writeFile() //Р·Р°РїРёСЃСЊ Р±РёРЅР°СЂРЅРѕРіРѕ С„Р°Р№Р»Р° int
     filebinary.close();
 }
 
-void readFile(std::string &file) //С‡С‚РµРЅРёРµ Р±РёРЅР°СЂРЅРѕРіРѕ С„Р°Р№Р»Р° int
+void readFile(std::string &file) //чтение бинарного файла int
 {
     int number;
     std::ifstream filebinary(file, std::ios::binary);
@@ -74,15 +74,15 @@ void readFile(std::string &file) //С‡С‚РµРЅРёРµ Р±РёРЅР°СЂРЅРѕРіРѕ С„Р°Р№Р»Р° in
     std::cout << number << std::endl;
 }
 
-void writeFileString() //Р·Р°РїРёСЃСЊ Р±РёРЅР°СЂРЅРѕРіРѕ С„Р°Р№Р»Р° string
+void writeFileString() //запись бинарного файла string
 {
     const char* title = "GeekBrains";
 
     std::ofstream filebinary("title.bin", std::ios::binary);
-    filebinary.write(title, std::strlen(title)); //РґР»РёРЅР° РЅСѓР»СЊС‚РµСЂРјРёРЅРёСЂРѕРІР°РЅРЅРѕ СЃРё СЃС‚СЂРѕРєРё, СЃРєРѕР»СЊРєРѕ РІ РЅРµР№ С‡Р°СЂРѕРІ
+    filebinary.write(title, std::strlen(title)); //длина нультерминированно си строки, сколько в ней чаров
     filebinary << std::endl << 23;
     filebinary.close();
-    std::cout << "Р·Р°РїРёСЃСЊ Р·Р°РІРµСЂС€РµРЅР°";
+    std::cout << "запись завершена";
 }
 
 void lesson()
@@ -91,9 +91,9 @@ void lesson()
     //writingBool();
     //array();
 
-    //writeFile(); //Р·Р°РїРёСЃСЊ Р±РёРЅР°СЂРЅРѕРіРѕ С„Р°Р№Р»Р°
+    //writeFile(); //запись бинарного файла
 
     //std::string binaryfile = "fileBinary.bin";
-    //readFile(binaryfile); //С‡С‚РµРЅРёРµ Р±РёРЅР°СЂРЅРѕРіРѕ С„Р°Р№Р»Р°
+    //readFile(binaryfile); //чтение бинарного файла
     writeFileString();
 }
