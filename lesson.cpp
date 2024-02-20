@@ -96,5 +96,4 @@ void lesson()
     //std::string binaryfile = "fileBinary.bin";
     //readFile(binaryfile); //чтение бинарного файла
     //writeFileString();
-    std::cout << "Долбаная кодировка сработала и в clion и в github";
 }
