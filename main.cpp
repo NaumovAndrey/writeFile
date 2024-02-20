@@ -17,7 +17,7 @@ int main()
     SetConsoleOutputCP(1251);
     setlocale(LC_ALL, "RUS");
 
-    std::cout << "Äîìàøíÿÿ ðàáîòà êî âòîðîé ëåêöèè. Çàïèñü â ôàéëû" << std::endl;
+    std::cout << "Ð”Ð¾Ð¼Ð°ÑˆÐ½ÑÑ Ñ€Ð°Ð±Ð¾Ñ‚Ð° ÐºÐ¾ Ð²Ñ‚Ð¾Ñ€Ð¾Ð¹ Ð»ÐµÐºÑ†Ð¸Ð¸. Ð—Ð°Ð¿Ð¸ÑÑŒ Ð² Ñ„Ð°Ð¹Ð»Ñ‹" << std::endl;
 
     while (true)
     {
@@ -27,7 +27,7 @@ int main()
         std::cout << "3: " << std::endl;
         std::cout << "4: " << std::endl;
         std::cout << "5: " << std::endl;
-        std::cout << "Ââåäèòå ÷èñëî îò 0 äî 4 èëè ÷òî-òî äðóãîå äëÿ âûõîäà: ";
+        std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾ Ð¾Ñ‚ 0 Ð´Ð¾ 4 Ð¸Ð»Ð¸ Ñ‡Ñ‚Ð¾-Ñ‚Ð¾ Ð´Ñ€ÑƒÐ³Ð¾Ðµ Ð´Ð»Ñ Ð²Ñ‹Ñ…Ð¾Ð´Ð°: ";
 
         int task;
         std::cin >> task;
@@ -44,35 +44,35 @@ int main()
         else if (task == 1)
         {
             system("cls");
-            std::cout << "Çàäà÷à 1 " << std::endl;
+            std::cout << "Ð—Ð°Ð´Ð°Ñ‡Ð° 1 " << std::endl;
             task1();
             _getch();
             system("cls");;
         } else if (task == 2)
         {
             system("cls");
-            std::cout << "Çàäà÷à 2 " << std::endl;
+            std::cout << "Ð—Ð°Ð´Ð°Ñ‡Ð° 2 " << std::endl;
             task2();
             _getch();
             system("cls");;
         } else if (task == 3)
         {
             system("cls");
-            std::cout << "Çàäà÷à 3 " << std::endl;
+            std::cout << "Ð—Ð°Ð´Ð°Ñ‡Ð° 3 " << std::endl;
             task3();
             _getch();
             system("cls");;
         } else if (task == 4)
         {
             system("cls");
-            std::cout << "Çàäà÷à 4 " << std::endl;
+            std::cout << "Ð—Ð°Ð´Ð°Ñ‡Ð° 4 " << std::endl;
             task4();
             _getch();
             system("cls");;
         }  else
         {
             system("cls");
-            std::cout << "íåêîððåêòíûé ââîä. Âûõîä èç ïðîãðàììû";
+            std::cout << "Ð½ÐµÐºÐ¾Ñ€Ñ€ÐµÐºÑ‚Ð½Ñ‹Ð¹ Ð²Ð²Ð¾Ð´. Ð’Ñ‹Ñ…Ð¾Ð´ Ð¸Ð· Ð¿Ñ€Ð¾Ð³Ñ€Ð°Ð¼Ð¼Ñ‹";
             break;
         }
     }
